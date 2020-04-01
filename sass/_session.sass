@@ -3,13 +3,40 @@
         font-family: 'myriad-700'
         color: #6f3326
         font-size: 50px
+        letter-spacing: 2px
+        margin-bottom: 60px
     &-wrap
         display: flex
         flex-wrap: wrap
+        justify-content: space-between
     &__item
+        width: 30%
         &-block
             background-color: black
-            text-align: center
+            
+            // text-align: center
+            margin-bottom: 20px
         &-img
-            padding: 30px
+            margin: 20px
+            width: 89%
             height: 100%
+        &-name
+            position: relative
+            font-family: 'Cormorant-Regular'
+            color: #ffffff
+            margin-bottom: 60px
+            padding: 10px 20px
+            background: #7594cb
+            z-index: 0
+            &:after
+                z-index: 99
+                position: absolute
+                margin-top: -46px
+                content: ""
+                right: 0
+                border: 56px solid transparent
+                border-bottom: 0px solid transparent
+                border-right: 20px solid white
+                border-left: 0px solid transparent
+        &-title
+            font-size: 16px
